@@ -2,54 +2,143 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="meteo.css" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--ICI CDN BOOTSRAP-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-    <title>Test_intégration</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--ICI CDN BOOTSRAP-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <title>Test_intégration</title>
 </head>
+<style>
+  .button {
+    color: burlywood
+  }
+
+  .manTest {
+    background-image: url("C:\Users\jp196\Documents\#Formation La Manu Le Havre\Test_Integration\img\background-spiral.png");
+    background-color: transparent;
+  }
+
+  .container_principal {
+    background-image: url("C:\Users\jp196\Documents\#Formation La Manu Le Havre\Test_Integration\img\Polynesie-1680x720.jpg");
+  }
+</style>
 
 <body>
-
-   <div class="container_principal-fluid">
-    <div class="row text-white">
-        <div class="col-2"></div>
-        <div class="col-4 ligne1 fs-1">
-            Bienvenue 
+  <div class="container_principal-fluid col-2">
+    <!-- <img src="./img/Polynesie-1680x720.jpg" class="img-fluid" alt="image de fond"> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="row col-lg-2">
+        <div class="collapse navbar-collapse col-2" id="navbarSupportedContent">
+          <a class="navbar-brand " href="#">
+            <img src="./img/voyages.png" alt="image Les Voyages" width="30" height="30">
+          </a>
+          <ul class="navbar-nav navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">DESTINATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OÙ ET QUAND PARTIR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">CULTURE ET VOYAGE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">QUI SOMMES-NOUS</a>
+            </li>
+          </ul>
+          <div class="col-2"></div>
         </div>
-       <div class="col-2 ligne1 fs-1" id="cityName"></div>
-       <div class="col-4"></div>
+      </div>
+  </div>
+  </nav>
+
+  <div class="row" text-center>
+    <h1>
+      Luxe & prestige Polynésie Française
+    </h1>
+  </div>
+
+  <div class="row text-center">
+    <p class="manText">
+      Aussi belles que précieuses, Tahiti et ses îles forment un écrin de toute beauté où luxe et prestige côtoient
+      quiétude et authenticité. Nos spécialistes ont déniché de véritables havres de paix au cœur du Pacifique, des
+      décors privilégiés et des adresses d’exception pour tisser des voyages sur mesure qui séduiront les voyageurs les
+      plus exigeants.
+      Sur l’île de Tetiaora, The Brando est sûrement l’un des joyaux les plus majestueux, avec ses 35 villas et leurs
+      plages privatives ourlées d’un lagon fréquenté par les tortues marines, les raies manta et les oiseaux exotiques.
+      Un véritable paradis pour un séjour exclusif au cœur d’une nature restée intacte, avec accueil et service 5
+      étoiles.
+
+      Bora Bora n’est pas en reste d’hôtels prestigieux : le Saint Régis, le Four Seasons ou encore le Conrad mêlent
+      intimité, élégance et panoramas de carte postale. C’est sur l’île de Tahaa, petite sœur de Raiatea, que l’on
+      trouve le premier Relais et Châteaux de Polynésie, le Tahaa Island Resort, qui fait sienne la philosophie de ce
+      réseau exclusif basée sur la sophistication et l'authenticité, en harmonie avec un environnement préservé, la
+      population et la culture locale.
+      Luxe et prestige se retrouvent aussi dans des instants précieux. Un survol du lagon de Tahiti, une croisière à
+      bord d’un catamaran privatisé, une journée en tête à tête sur un superbe motu, un dîner dans le cadre romantique
+      d’un restaurant gastronomique, un massage dans un spa aux senteurs divines... Et aussi, tout simplement, un moment
+      de détente dans un bungalow sur pilotis posé sur des eaux transparentes ou le spectacle de l’horizon qui se pare
+      de ses plus belles nuances au coucher ou au lever du soleil. Luxe, calme et volupté n’attendent que vous en
+      Polynésie.
+    </p>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="./img/preview.ile-de-paques_token_jsetcr6v.jpg" class="img-fluid" alt="image de fond">
     </div>
-    
-    <div class="row col">
-        <nav class="navbar col-4 text-center">
-            <div class="row justify-content-center my-5">
-                <form class="form-inline col-8">
-                    <input type="text" id="myCity" class="recherche form-control mr-sm-2 text" type="search"
-                        placeholder="Tapez le nom d'une ville" aria-label="Search">
-                </form>
-                <button class="col-lg-4 btn btn-secondary" id="mySearch">Rechercher</button>
-            </div>
-        </nav>
+    <div class="col">
+      <img src="./img/preview.kinkakuji-temple-golden-pavilion-zen-buddhist-on-lake-at-tokyo--_token_pjkpzkzl.jpg"
+        class="img-fluid" alt="image de fond">
     </div>
-</div>
-
-    <footer id="sticky-footer" class="flex-shrink-0 py-4 footer-light text-white-50 fixed-bottom">
-        <div class="container text-center">
-            <small>Copyright &copy; Your Website</small>
-        </div>
-    </footer>
+    <div class="col">
+      <img src="./img/preview.le-brando_token_3elacfqt.jpg" class="img-fluid" alt="image de fond">
+    </div>
+  </div>
+  </div>
 
 
-    <!--ICI SCRIPT BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
-    </body>
+  <footer id="footer_voyage">
+    <div class="btn-group col-2" role="group">
+      <button id="btnGroupDropvoyage1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Selon vos envies
+      </button>
+      <ul class="dropdown-menu col-2" aria-labelledby="btnGroupDrop1">
+        <li><a class="dropdown-item" href="#">link 1</a></li>
+        <li><a class="dropdown-item" href="#">link 2</a></li>
+      </ul>
+    </div>
+    <div class="btn-group col-2" role="group">
+      <button id="btnGroupDropvoyage2" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Villes/Régions
+      </button>
+      <ul class="dropdown-menu col-2" aria-labelledby="btnGroupDrop1">
+        <li><a class="dropdown-item" href="#">link 1</a></li>
+        <li><a class="dropdown-item" href="#">link 2</a></li>
+      </ul>
+    </div>
+    <div class="text-center">
+      <h3>© 2018 Les maisons du voyage</h3>
+    </div>
+    <div class="col-2" role="group" aria-label="Button devis">
+      <input type="submit" class="btn-check" id="btndevois" >
+      <label class="btn-group" for="btncheck1">Demander un devis</label>
+    </div>
+    </div>
+  </footer>
+
+
+  <!--ICI SCRIPT BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
 
 </html>

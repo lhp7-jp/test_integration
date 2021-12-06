@@ -1,4 +1,10 @@
-  
-{
-    margin-bottom:1rem;
+.container_principal {
+    background-image:url("C:\Users\jp196\Documents\#Formation La Manu Le Havre\Test_Integration\img\Polynesie-1680x720.jpg");
+    } 
+.button {
+    color : burlywood
+}
+.manTest {
+  background-image: url("C:\Users\jp196\Documents\#Formation La Manu Le Havre\Test_Integration\img\background-spiral.png");
+  background-color: transparent;
 }
